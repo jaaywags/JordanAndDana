@@ -7,7 +7,13 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build-for-dev": "ng build --configuration=development",
+    "build-for-prod": "ng build --configuration=production",
+    "copy-favicons": "cp src/favicons/*.* dist",
+    "package-for-dev": "npm run build-for-dev",
+    "package-for-prod": "npm run build-for-prod && npm run purge-css",
+    "purge-css": "purgecss -c scripts/purgecss.config.js -o dist"
   },
   "private": true,
   "dependencies": {
