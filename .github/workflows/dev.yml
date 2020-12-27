@@ -38,5 +38,5 @@ jobs:
           name: deploy_dist_dev
       - name: Deploy to Dev
       - run: |
-        ssh ${{ secrets.FTP_USERNAME }}@${{ secrets.FTP_HOST }} "cd ${{ secrets.FTP_REMOTE_PATH_DEV }} && rm -rf ./*"
-        scp -r deploy_dist_dev/* deploy_dist_dev/.htaccess ${{ secrets.FTP_USERNAME }}@${{ secrets.FTP_HOST }}:${{ secrets.FTP_REMOTE_PATH_DEV }}
+         ssh ${{ secrets.FTP_USERNAME }}@${{ secrets.FTP_HOST }} "cd ${{ secrets.FTP_REMOTE_PATH_DEV }} && rm -rf ./*"
+         scp -r deploy_dist_dev/* deploy_dist_dev/.htaccess ${{ secrets.FTP_USERNAME }}@${{ secrets.FTP_HOST }}:${{ secrets.FTP_REMOTE_PATH_DEV }}
