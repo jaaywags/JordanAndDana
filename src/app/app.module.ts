@@ -8,6 +8,8 @@ import { BridalPartyComponent } from './bridal-party/bridal-party.component';
 import { DetailsComponent } from './details/details.component';
 import { AboutComponent } from './about/about.component';
 import { RsvpComponent } from './rsvp/rsvp.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { RsvpComponent } from './rsvp/rsvp.component';
     BridalPartyComponent,
     DetailsComponent,
     AboutComponent,
-    RsvpComponent
+    RsvpComponent,
+    NavbarComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
