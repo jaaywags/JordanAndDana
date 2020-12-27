@@ -33,7 +33,17 @@ jobs:
         uses: actions/download-artifact@v1
         with:
           name: deploy_dist_prod
-      - name: Deploy to PROD
+      - name: Setup SSH Keys and known_hosts
+        env:
+          SSH_AUTH_SOCK: /tmp/ssh_agent.sock
+        run: |
+          mkdir -p ~/.ssh
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
+          ssh-agent -a $SSH_AUTH_SOCK > /dev/null
+          ssh-add - <<< "${{ secrets.FTP_PRIVATE_KEY }}"
+      - name: Deploy to Prod
+        env:
+          SSH_AUTH_SOCK: /tmp/ssh_agent.sock
         run: |
           ssh ${{ secrets.FTP_USERNAME }}@${{ secrets.FTP_HOST }} "cd ${{ secrets.FTP_REMOTE_PATH_PROD }} && rm -rf ./*"
           scp -r deploy_dist_prod/* deploy_dist_prod/.htaccess ${{ secrets.FTP_USERNAME }}@${{ secrets.FTP_HOST }}:${{ secrets.FTP_REMOTE_PATH_PROD }}
