@@ -31,9 +31,13 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.sass"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -127,5 +131,8 @@
       }
     }
   },
-  "defaultProject": "JordanAndDana"
+  "defaultProject": "JordanAndDana",
+  "cli": {
+    "analytics": "e05e5894-488c-4e12-9908-77eea7bf6516"
+  }
 }
