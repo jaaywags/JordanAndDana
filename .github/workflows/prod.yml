@@ -34,6 +34,6 @@ jobs:
         with:
           name: deploy_dist_prod
       - name: Deploy to PROD
-      - run: |
-         ssh ${{ secrets.FTP_USERNAME }}@${{ secrets.FTP_HOST }} "cd ${{ secrets.FTP_REMOTE_PATH_PROD }} && rm -rf ./*"
-         scp -r deploy_dist_prod/* deploy_dist_prod/.htaccess ${{ secrets.FTP_USERNAME }}@${{ secrets.FTP_HOST }}:${{ secrets.FTP_REMOTE_PATH_PROD }}
+        run: |
+          ssh ${{ secrets.FTP_USERNAME }}@${{ secrets.FTP_HOST }} "cd ${{ secrets.FTP_REMOTE_PATH_PROD }} && rm -rf ./*"
+          scp -r deploy_dist_prod/* deploy_dist_prod/.htaccess ${{ secrets.FTP_USERNAME }}@${{ secrets.FTP_HOST }}:${{ secrets.FTP_REMOTE_PATH_PROD }}
