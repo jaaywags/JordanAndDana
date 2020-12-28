@@ -49,6 +49,5 @@ jobs:
         env:
           SSH_AUTH_SOCK: /tmp/ssh_agent.sock
         run: |
-          ls -a src
           ssh ${{ secrets.FTP_USERNAME }}@${{ secrets.FTP_HOST }} "cd ${{ secrets.FTP_REMOTE_PATH_DEV }} && rm -rf ./*"
-          scp -r deploy_dist_dev/JordanAndDana* src/.htaccess ${{ secrets.FTP_USERNAME }}@${{ secrets.FTP_HOST }}:${{ secrets.FTP_REMOTE_PATH_DEV }}
+          scp -r deploy_dist_dev/JordanAndDana/* src/.htaccess ${{ secrets.FTP_USERNAME }}@${{ secrets.FTP_HOST }}:${{ secrets.FTP_REMOTE_PATH_DEV }}

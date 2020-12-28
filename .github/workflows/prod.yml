@@ -39,7 +39,7 @@ jobs:
           SSH_AUTH_SOCK: /tmp/ssh_agent.sock
         run: |
           mkdir -p ~/.ssh
-          ssh-keyscan github.com >> ~/.ssh/known_hosts
+          ssh-keyscan -t rsa jordansportfolio.com >> ~/.ssh/known_hosts
           ssh-agent -a $SSH_AUTH_SOCK > /dev/null
           ssh-add - <<< "${{ secrets.FTP_PRIVATE_KEY }}"
       - name: Deploy to Prod
@@ -47,4 +47,4 @@ jobs:
           SSH_AUTH_SOCK: /tmp/ssh_agent.sock
         run: |
           ssh ${{ secrets.FTP_USERNAME }}@${{ secrets.FTP_HOST }} "cd ${{ secrets.FTP_REMOTE_PATH_PROD }} && rm -rf ./*"
-          scp -r deploy_dist_prod/* deploy_dist_prod/.htaccess ${{ secrets.FTP_USERNAME }}@${{ secrets.FTP_HOST }}:${{ secrets.FTP_REMOTE_PATH_PROD }}
+          scp -r deploy_dist_prod/JordanAndDana/* src/.htaccess ${{ secrets.FTP_USERNAME }}@${{ secrets.FTP_HOST }}:${{ secrets.FTP_REMOTE_PATH_PROD }}
