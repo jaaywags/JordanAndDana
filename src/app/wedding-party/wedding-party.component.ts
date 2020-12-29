@@ -48,7 +48,7 @@ export class WeddingPartyComponent implements OnInit {
     description: "A man of great intelligence and wisdom. He can hold an intelligiant and fun conversation with anyone for hours.",
     bridesmaid: false
   } as WeddingPartyMember, {
-    name: "Stephen LeMont - Brother",
+    name: "Stephen Lamont - Brother",
     picture: "stephen01.jpg",
     description: "Has walked a road no man wants to walked. Made the best of what he had and has made it a long way. With a bright future ahead, he is destined to accomplish a lot.",
     bridesmaid: false
