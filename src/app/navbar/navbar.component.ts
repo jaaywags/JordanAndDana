@@ -1,5 +1,8 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
+interface CustomHtmlElement extends HTMLElement {
+  ariaExpanded?: string;
+}
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -17,7 +20,9 @@ export class NavbarComponent implements OnInit {
       return;
     }
 
-    const el: HTMLElement = this.navbarToggle.nativeElement;
-    el.click();
+    const el: CustomHtmlElement = this.navbarToggle.nativeElement;
+    if (el.ariaExpanded === "true") {
+      el.click();
+    }
   }
 }
