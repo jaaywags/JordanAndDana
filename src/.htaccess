@@ -44,6 +44,8 @@
 	ExpiresByType application/x-shockwave-flash "access 1 month"
 	ExpiresByType image/x-icon "access 1 year"
 	ExpiresDefault "access 1 month"
+	# uncomment out this next line if changes to site are being made
+	Header append Cache-Control must-revalidate
 </IfModule>
 
 <ifModule mod_headers.c>
