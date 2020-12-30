@@ -10,8 +10,7 @@ import { AboutComponent } from './about/about.component';
 import { RsvpComponent } from './rsvp/rsvp.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
-import { BridesmaidsPipe } from './shared/pipes/bridesmaids-filter';
-import { GroomsmenPipe } from './shared/pipes/groomsmen-filter';
+import { WeddingPartyMemberPipe } from './shared/pipes/wedding-party-member.filter';
 
 @NgModule({
   declarations: [
@@ -23,8 +22,7 @@ import { GroomsmenPipe } from './shared/pipes/groomsmen-filter';
     RsvpComponent,
     NavbarComponent,
     HomeComponent,
-    BridesmaidsPipe,
-    GroomsmenPipe,
+    WeddingPartyMemberPipe,
   ],
   imports: [
     BrowserModule,
