@@ -9,7 +9,7 @@ import { WeddingPartyMember, WeddingPartyMemberTypes } from '../shared/models/we
 export class WeddingPartyComponent implements OnInit {
   weddingPartyMemberTypes = WeddingPartyMemberTypes;
   weddingParty: WeddingPartyMember[] = [{
-    name: "Olvia",
+    name: "Olivia",
     picture: "olivia01.jpg",
     description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
     memberType: WeddingPartyMemberTypes.maidOfHonor,
