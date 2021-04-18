@@ -52,7 +52,7 @@ export class WeddingPartyComponent implements OnInit {
     name: "Luke",
     picture: "luke02.png",
     description: "Luke is the light of the party. He makes sure everyone is having a good time, no one is left out, and that everyone is safe. He's got your back.",
-    memberType: WeddingPartyMemberTypes.ordainedMinister,
+    memberType: WeddingPartyMemberTypes.groomsman,
   } as WeddingPartyMember, {
     name: "Stephen",
     picture: "stephen02.png",
