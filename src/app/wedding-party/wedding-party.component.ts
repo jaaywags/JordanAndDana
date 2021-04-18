@@ -49,14 +49,14 @@ export class WeddingPartyComponent implements OnInit {
     description: "A man of great intelligence and wisdom. He can hold an amazing and fun conversation with anyone for hours.",
     memberType: WeddingPartyMemberTypes.bestMan,
   } as WeddingPartyMember, {
-    name: "Luke",
-    picture: "luke02.png",
-    description: "Luke is the light of the party. He makes sure everyone is having a good time, no one is left out, and that everyone is safe. He's got your back.",
-    memberType: WeddingPartyMemberTypes.groomsman,
-  } as WeddingPartyMember, {
     name: "Stephen",
     picture: "stephen02.png",
     description: "Has walked a road no man wants to walked. Made the best of what he had and has made it a long way. With a bright future ahead, he is destined to accomplish greatness.",
+    memberType: WeddingPartyMemberTypes.groomsman,
+  } as WeddingPartyMember, {
+    name: "Luke",
+    picture: "luke02.png",
+    description: "Luke is the light of the party. He makes sure everyone is having a good time, no one is left out, and that everyone is safe. He's got your back.",
     memberType: WeddingPartyMemberTypes.groomsman,
   } as WeddingPartyMember, {
     name: "Nick",
