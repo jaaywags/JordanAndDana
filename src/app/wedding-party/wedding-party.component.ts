@@ -78,6 +78,11 @@ export class WeddingPartyComponent implements OnInit {
     picture: "imageNotFound_1285x1285.png",
     description: "I thought I was goofy, then I met this guy. A warm heart and a big smile. He will always brighten my day.",
     memberType: WeddingPartyMemberTypes.groomsman,
+  } as WeddingPartyMember, {
+    name: "David",
+    picture: "david02.png",
+    description: "",
+    memberType: WeddingPartyMemberTypes.groomsman,
   } as WeddingPartyMember]
 
   constructor() { }
