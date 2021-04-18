@@ -75,7 +75,7 @@ export class WeddingPartyComponent implements OnInit {
     memberType: WeddingPartyMemberTypes.groomsman,
   } as WeddingPartyMember, {
     name: "Zach",
-    picture: "imageNotFound_1285x1285.png",
+    picture: "zach02.png",
     description: "I thought I was goofy, then I met this guy. A warm heart and a big smile. He will always brighten my day.",
     memberType: WeddingPartyMemberTypes.groomsman,
   } as WeddingPartyMember, {
