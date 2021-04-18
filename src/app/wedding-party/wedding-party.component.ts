@@ -35,12 +35,12 @@ export class WeddingPartyComponent implements OnInit {
     memberType: WeddingPartyMemberTypes.bridesmaid,
   } as WeddingPartyMember, {
     name: "Tiffany",
-    picture: "tiffany01.jpg",
+    picture: "tiffany03.png",
     description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
     memberType: WeddingPartyMemberTypes.bridesmaid,
   } as WeddingPartyMember, {
     name: "Danielle",
-    picture: "imageNotFound_750x400.png",
+    picture: "danielle02.png",
     description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
     memberType: WeddingPartyMemberTypes.bridesmaid,
   } as WeddingPartyMember, {

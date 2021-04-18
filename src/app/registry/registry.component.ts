@@ -7,15 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegistryComponent implements OnInit {
   registries = [{
-    name: 'Amazon',
-    link: 'https://www.amazon.com/wedding/dana-brangaitis-jordan-wagner--june-2021/registry/251174NWQ5GQJ'
-  }, {
-    name: 'Create & Barrel',
-    link: 'https://www.crateandbarrel.com/gift-registry/jordan-wagner-and-dana-brangaitis/r6204559'
-  }, {
-    name: 'Williams Sonoma',
-    link: 'https://www.williams-sonoma.com/registry/tj55xznmbn/registry-list.html'
-  }];
+    name: 'MyRegistry.com',
+    link: 'https://www.myregistry.com/wedding-registry/dana-jane-brangaitis-and-jordan-wagner-katy-tx/2746659/giftlist'
+  }
+];
 
   constructor() { }
 
