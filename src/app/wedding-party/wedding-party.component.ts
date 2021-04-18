@@ -83,6 +83,11 @@ export class WeddingPartyComponent implements OnInit {
     picture: "david02.png",
     description: "",
     memberType: WeddingPartyMemberTypes.groomsman,
+  } as WeddingPartyMember, {
+    name: "Izzy",
+    picture: "izzy02.png",
+    description: "",
+    memberType: WeddingPartyMemberTypes.flowerGirl,
   } as WeddingPartyMember]
 
   constructor() { }
