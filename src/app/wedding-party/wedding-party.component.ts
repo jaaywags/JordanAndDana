@@ -10,27 +10,27 @@ export class WeddingPartyComponent implements OnInit {
   weddingPartyMemberTypes = WeddingPartyMemberTypes;
   weddingParty: WeddingPartyMember[] = [{
     name: "Olivia",
-    picture: "olivia01.jpg",
+    picture: "olivia02.png",
     description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
     memberType: WeddingPartyMemberTypes.maidOfHonor,
   } as WeddingPartyMember, {
     name: "Jenna",
-    picture: "jenna01.jpg",
+    picture: "jenna02.png",
     description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
     memberType: WeddingPartyMemberTypes.bridesmaid,
   } as WeddingPartyMember, {
     name: "April",
-    picture: "april01.jpg",
+    picture: "april02.png",
     description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
     memberType: WeddingPartyMemberTypes.bridesmaid,
   } as WeddingPartyMember, {
     name: "Caitlin",
-    picture: "caitlin01.jpg",
+    picture: "caitlin02.png",
     description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
     memberType: WeddingPartyMemberTypes.bridesmaid,
   } as WeddingPartyMember, {
     name: "Elizabeth",
-    picture: "elizabeth01.jpg",
+    picture: "elizabeth02.png",
     description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
     memberType: WeddingPartyMemberTypes.bridesmaid,
   } as WeddingPartyMember, {
@@ -50,44 +50,34 @@ export class WeddingPartyComponent implements OnInit {
     memberType: WeddingPartyMemberTypes.bestMan,
   } as WeddingPartyMember, {
     name: "Luke",
-    picture: "imageNotFound_750x400.png",
+    picture: "luke02.png",
     description: "Luke is the light of the party. He makes sure everyone is having a good time, no one is left out, and that everyone is safe. He's got your back.",
     memberType: WeddingPartyMemberTypes.ordainedMinister,
   } as WeddingPartyMember, {
     name: "Stephen",
-    picture: "stephen01.jpg",
+    picture: "stephen02.png",
     description: "Has walked a road no man wants to walked. Made the best of what he had and has made it a long way. With a bright future ahead, he is destined to accomplish greatness.",
     memberType: WeddingPartyMemberTypes.groomsman,
   } as WeddingPartyMember, {
     name: "Nick",
-    picture: "nick01.jpg",
+    picture: "nick02.png",
     description: "Nick brings the games. He will make sure conversations are flowing and people are having fun. He always has a deck of cards and some change in his pockets.",
     memberType: WeddingPartyMemberTypes.groomsman,
   } as WeddingPartyMember, {
     name: "Dustin",
-    picture: "imageNotFound_750x400.png",
+    picture: "dustin02.png",
     description: "Just about the nicest person you will ever meet. Always looking to do the right thing and help anyone he can.",
     memberType: WeddingPartyMemberTypes.groomsman,
   } as WeddingPartyMember, {
     name: "Matt",
-    picture: "matt01.jpg",
+    picture: "matt02.png",
     description: "Full of complexity and straight answers. He is driven to find truth in chaos and will go to great lengths to find it. Under all that is a kind person and a great friend.",
     memberType: WeddingPartyMemberTypes.groomsman,
   } as WeddingPartyMember, {
     name: "Zach",
-    picture: "imageNotFound_750x400.png",
+    picture: "imageNotFound_1285x1285.png",
     description: "I thought I was goofy, then I met this guy. A warm heart and a big smile. He will always brighten my day.",
     memberType: WeddingPartyMemberTypes.groomsman,
-  } as WeddingPartyMember, {
-    name: "Aaaa",
-    picture: "imageNotFound_750x400.png",
-    description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-    memberType: WeddingPartyMemberTypes.flowerGirl,
-  } as WeddingPartyMember, {
-    name: "Bbbb",
-    picture: "imageNotFound_750x400.png",
-    description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
-    memberType: WeddingPartyMemberTypes.ringBearer,
   } as WeddingPartyMember]
 
   constructor() { }
